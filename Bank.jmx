@@ -53,19 +53,19 @@ if (!data.contains(&quot;mngr23771&quot;))
         </BeanShellSampler>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="[IC]-Mngr Home" enabled="true">
-          <stringProp name="IncludeController.includepath">D:\jmeter\apache-jmeter-2.11\apache-jmeter-2.11\amazon framework\Bank Mngr Home.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">D:\jmeter\apache-jmeter-2.11\apache-jmeter-2.11\Bank\Bank Mngr Home.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="[IC]-Launch" enabled="true">
-          <stringProp name="IncludeController.includepath">D:\jmeter\apache-jmeter-2.11\apache-jmeter-2.11\amazon framework\Bank Launch App.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">D:\jmeter\apache-jmeter-2.11\apache-jmeter-2.11\Bank\Bank Launch App.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="[IC]-Login" enabled="true">
-          <stringProp name="IncludeController.includepath">D:\jmeter\apache-jmeter-2.11\apache-jmeter-2.11\amazon framework\Bank Login.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">D:\jmeter\apache-jmeter-2.11\apache-jmeter-2.11\Bank\Bank Login.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="[IC]-Logout" enabled="true">
-          <stringProp name="IncludeController.includepath">D:\jmeter\apache-jmeter-2.11\apache-jmeter-2.11\amazon framework\Bank Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">D:\jmeter\apache-jmeter-2.11\apache-jmeter-2.11\Bank\Bank Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -111,14 +111,6 @@ if (!data.contains(&quot;mngr23771&quot;))
           </collectionProp>
         </ModuleController>
         <hashTree>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="script">vars.put(&quot;datatoassert&quot;, new String(data));
-</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
           <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
@@ -176,13 +168,6 @@ if (!data.contains(&quot;mngr23771&quot;))
             <stringProp name="filename"></stringProp>
             <boolProp name="ResultCollector.success_only_logging">true</boolProp>
           </ResultCollector>
-          <hashTree/>
-          <BeanShellListener guiclass="TestBeanGUI" testclass="BeanShellListener" testname="BeanShell Listener" enabled="true">
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="script"></stringProp>
-          </BeanShellListener>
           <hashTree/>
         </hashTree>
         <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC]-Logout" enabled="true">
